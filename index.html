@@ -7,27 +7,136 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
 
-    <body>
         <header class="heading">
             <h1>Tshireletso Mpudu</h1>
-            <picture>
+
+            <div class="menu">
+            <nav>
+                <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experiance">Experiance</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact details">Contact details</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+            </div>
+
+            <!-- <h1>Tshireletso Mpudu</h1> -->
+            <!-- <picture>
                 <source srcset="./image/small.jpeg" media="(max-width: 600px)">
                 <source srcset="./image/my profile photo.jpeg" media="(max-width: 992px)">
                 <img src="./Images/Full picture.jpeg" alt="my profile photo" width="30%" height="30%">
-            </picture>
-
-            <h2>About me:</h2>
+            </picture> -->
         </header>
 
         <body>
-            <h2>Content:</h2>
-            <ul>
-                <li>Education</li>
-                <li>Experiance</li>
-                <li>Skills</li>
-                <li>Contact details</li>
-                <li>Form</li>
-            </ul>
+        <h2>About me:</h2>
+            <div class="container">
+                <iframe width="400" height="181" src="https://www.youtube.com/embed/sTeoEFzVNSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
 
-    </body>
+            <article>
+                <section class="grid-container">
+                <div class="grid-item ediaction">
+                <h2 id="education">Education</h2>
+
+                <h3>Qualification 1.</h3>
+                <p>Grade 12.</p>
+                <p>Completed matric at H.F Tlou High School in 2019.</p>
+
+                <h3>Qualification 2.</h3>
+                <p>Degree in business management.</p>
+                <p>Completed my degree at Cape Penisula University of Technology in 2022.</p>
+            </div>
+
+            <section class="grid-container">
+                <div class="grid-item skills">
+                <h2 id="skills">Skills</h2>
+                <ul>
+                    <li>Mathematical aptitude</li>
+                    <li>Problem solver</li>
+                    <li>Programming languages(HTML, CSS)</li>
+                    <li>Excellent organisational and time management</li>
+                    <li>Accuracy and attention to detail</li>
+                    <li>Self-development skills to keep up to date with fast-changing trends</li>
+                    <li>Team management</li>
+                </ul>
+            </section>
+            </body>
+            </article>
+
+            <footer>
+            <!---------------------------------------------------------Form section--------------------------------------------------------------->
+            <form action="https://formsubmit.co/tshirempudu@gmail.com" method="POST">
+                <fieldset>
+                    <h1>Form</h1>
+
+                    <!--This gives the sender multiple choices to select from-->
+                    <select name="subject" id="subject">
+                        <option value="interview">Interviw oppurtunity</option>
+                        <option value="recruiter">Recruiter</option>
+                        <option value="website feedback">Website feedback</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <div>
+                        <!--This div nest the following content-->
+                        <div>
+                            <!--The following are my radio buttons-->
+                            <label for="title">Title:</label>
+
+                            <label for=" title">Mr.</label>
+                            <input type="radio" name="title" value="Mr." id="Mr.">
+
+                            <lable for="title">Ms.</lable>
+                            <input type="radio" name="title" value="Ms." id="Ms.">
+                        </div>
+                        <br>
+
+                        <div>
+                            <!--Name and surname for the sender-->
+                            <label for="firtst name">First name:</label>
+                            <input type="text" id="firts name" name="First name" placeholder="name" required>
+                            <br>
+                            <br>
+
+                            <div>
+                                <label for="last name">Last name:</label>
+                                <input type="text" id="last name" name="Last name" required placeholder="last name"
+                                    required>
+                            </div>
+                            <br>
+
+                            <div>
+                                <!--This for the snder to put their email-->
+                                <lable for="email address">Email address:</lable>
+                                <input type="text" id="email adress" placeholder="email address" required>
+                            </div>
+                            <br>
+
+                            <!--This is where the sender writes their request-->
+                            <textarea name="message" id="text" cols="30" rows="10" placeholder="Message here please"
+                                required></textarea>
+                            <br>
+
+                            <!--This is for the sender to reset their input-->
+                            <div>
+                                <input type="reset">
+                            </div>
+                            <br>
+
+                            <!--This is for the sender to submit their input when done-->
+                            <div>
+                                <input type="submit">
+                            </div>
+                        </div>
+                </fieldset>
+            </form>
+            <!-----------------------------------------------------End of form------------------------------------------------------------------------------------>
+   
+   
+
+    </footer>
 </html>
