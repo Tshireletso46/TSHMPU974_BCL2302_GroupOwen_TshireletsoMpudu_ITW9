@@ -1,0 +1,11 @@
+html{ 
+    font-family: 'Times New Roman', Times, serif;
+}
+    
+    .heading{
+        background-image: url(../Images/Background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fit-content;
+        height: 100%
+}
