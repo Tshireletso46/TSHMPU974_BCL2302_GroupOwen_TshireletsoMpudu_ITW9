@@ -4,45 +4,39 @@
         <!--Title of my website-->
       <title>My digital resume</title>  
       <link rel="stylesheet" href="CSS/stylesheet.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
 
         <header class="heading">
-            <div id="name">
-            <h1>Tshireletso Mpudu.</h1>
-            <h3>
-                <em>Software developer.</em>
-            </h3>
-        </div>
+            <picture>
+                <source srcset="./image/default.jpg" media="(max-width: 600px)">
+                <source srcset="./image/small.jpg" media="(max-width: 992px)">
+                <img src="./Images/profile.JPG" alt="profile" width="20%" height="20%">
+            </picture>
 
             <div class="menu">
             <nav>
                 <ul>
+                <li><a href="#about me">About me</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#experiance">Experiance</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact details">Contact details</a></li>
                 <li><a href="#form">Form</a></li>
             </ul>
         </nav>
             </div>
-
-           
         </header>
 
-        <body>
-        <h2>About me:</h2>
-        <p>Responsible for building computer programs from scratch which caters for mobile devices and desktop. Also developing, coding, testing and debugging software applications for various institutions is fundamental to me. This is to ensure that  </p>
-            <picture>
-                <source srcset="./image/small.jpeg" media="(max-width: 600px)">
-                <source srcset="./image/my profile photo.jpeg" media="(max-width: 992px)">
-                <img src="./Images/Full picture.jpeg" alt="my profile photo" width="30%" height="30%">
-            </picture>
-            
             <article>
                 <section class="grid-container">
+                <div class="grid-item about me">
+                <em><h2 id="about me">ABOUT ME</h2></em>
+                <p>Responsible for building computer programs from scratch which caters for mobile devices and desktop. Also developing, coding, testing and debugging software applications for various institutions is fundamental to me. This is to ensure that  </p>
+                </div>
+                
                 <div class="grid-item ediaction">
-                <h2 id="education">Education</h2>
+                <em><h2 id="education">EDUCATION</h2></em>
 
                 <h3>Qualification 1.</h3>
                 <p>Grade 12.</p>
@@ -53,9 +47,8 @@
                 <p>Completed my degree at Cape Penisula University of Technology in 2022.</p>
             </div>
 
-            <section class="grid-container">
                 <div class="grid-item skills">
-                <h2 id="skills">Skills</h2>
+                <em><h2 id="skills">SKILLS</h2></em>
                 <ul>
                     <li>Mathematical aptitude</li>
                     <li>Problem solver</li>
@@ -69,11 +62,17 @@
             </body>
             </article>
 
+            <!--Footer-->
             <footer>
+            <button id="button">
+                <!--This button takes the viewr back to the start of my resume-->
+                <h3><a href="#heading" id="back-a">Back to top</a></h3>
+            </button>
+
             <!---------------------------------------------------------Form section--------------------------------------------------------------->
-            <form action="https://formsubmit.co/tshirempudu@gmail.com" method="POST">
+            <form action="https://formsubmit.co/tshirempudu@gmail.com" method="POST" class="form">
                 <fieldset>
-                    <h1>Form</h1>
+                    <em><h1 id="form">Form</h1></em>
 
                     <!--This gives the sender multiple choices to select from-->
                     <select name="subject" id="subject">
@@ -120,7 +119,7 @@
                             <br>
 
                             <!--This is where the sender writes their request-->
-                            <textarea name="message" id="text" cols="30" rows="10" placeholder="Message here please"
+                            <textarea name="message" id="text" cols="30" rows="10"
                                 required></textarea>
                             <br>
 
@@ -145,6 +144,8 @@
             <p>Email adress: tshirempudu@gmail.com</p>
             <p>Phone: 065 895 1817</p>
             <p><a href="linkedin">LinkedIn</a></p>
-   
+            
+
+            <i class="fa-brands fa-instagram"></i>
     </footer>
 </html>
