@@ -2,7 +2,7 @@
 html{ 
     font-family: 'Times New Roman', Times, serif;
 }
-
+/* Heading style */
 .heading{
     background-image: url(../Images/Background.png);
     background-size: cover;
@@ -13,6 +13,13 @@ html{
     position: relative;
 }
 
+#title{
+    text-align: center;
+    position: relative;
+    top: 100px;
+    color:rgb(8, 14, 18);
+}
+
 img {
     border-radius: 50%;
     border: 2px solid white;
@@ -21,7 +28,7 @@ img {
     width: 20%;
     position: relative;
     left: 250px;
-    top: 20px;
+    bottom: 20px;
 
 }
 
@@ -31,7 +38,7 @@ img {
 
 .menu ul{
     position: absolute;
-    right: 3%;
+    right: 5%;
     top: 0; 
     
 }
@@ -39,12 +46,12 @@ img {
     text-decoration: none;
     font-size: 20px;
     color:rgb(0,0,0);
-    font-weight:100%; 
+    font-weight: bold; 
     
 }
 .menu ul li{
     display: inline-block;
-    margin: 5px;
+    margin: 10px;
 }
 
 article{
@@ -58,11 +65,10 @@ article{
     text-align: center;
 }
 
-
-
 footer{
         color: rgb(8, 14, 18);
         font-size: large;
+        overflow: hidden;
 }
 
 .grid-item{
@@ -86,3 +92,13 @@ footer{
 }
 
 /* -----------------------------------------------------------Media Queries---------------------------------------------------------------------- */
+/* SMALL DEVICES */
+/* * SMALL DEVICES */
+@media screen and (max-width: 600px){
+    .heading{
+        font-size: small;
+    }
+    article{
+        font-size: small;
+    }
+}
