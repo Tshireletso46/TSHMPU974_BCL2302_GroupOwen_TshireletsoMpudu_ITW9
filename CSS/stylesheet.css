@@ -3,56 +3,28 @@ html{
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Heading */
-    .heading{
-        background-image: url(../Images/Background.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: fit-content;
-        height: 50%;
-        color: rgb(255, 255, 255);
-        position: relative;
-    
+.heading{
+    background-image: url(../Images/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fit-content;
+    height: 50vh;
+    color: rgb(255, 255, 255);
+    position: relative;
 }
 
-/* .content li{
-    display:inline;
-    list-style: none;
-    text-align: left;
-
-} */
-
-/* Embaded video */
-.container{
-    width: 400px;
-    height: 181px;
+#name{
+    margin-right: 20px
 }
 
 .menu{
-    color:rgb(255, 255, 255);
-    font-size: 35px;
-    line-height: 80px;
-    /* padding: 0 100px; */
-    font-weight: bold;
-    margin-top: 50%;
+    position: absolute;
+    left: 65%;
+    top: 100px; 
+    display: ;
 }
 
-/* navigation */
-nav{
-    height: 80px;
-    width: 100%;
-}
 
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 100px;
-    margin: 0 5px;
-    font-size: large;
-}
 
 article{
     background-color: rgb(157, 190, 224);
@@ -67,6 +39,7 @@ footer{
         background-position: fit-content;
         height: 100%;
         color: rgb(239, 243, 246);
+        font-size: large;
 }
 
 .grid-tem{
