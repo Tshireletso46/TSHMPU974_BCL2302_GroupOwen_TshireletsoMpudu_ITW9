@@ -13,6 +13,7 @@ html{
     position: relative;
 }
 
+/* My name and career styling */
 #title{
     text-align: center;
     position: relative;
@@ -20,6 +21,7 @@ html{
     color:rgb(8, 14, 18);
 }
 
+/* Picture styling */
 img {
     border-radius: 50%;
     border: 2px solid white;
@@ -42,6 +44,7 @@ img {
     top: 0; 
     
 }
+
 .menu ul li a{
     text-decoration: none;
     font-size: 20px;
@@ -61,15 +64,15 @@ article{
     cursor: pointer;
 }
 
-#about me,#skills, #education{
+#about me, #skills, #education{
     text-align: center;
 }
 
-footer{
+/* footer{
         color: rgb(8, 14, 18);
         font-size: large;
         overflow: hidden;
-}
+} */
 
 .grid-item{
     /* background-color: rgb(255, 255, 255); */
@@ -86,19 +89,87 @@ footer{
     column-gap: 2rem;
 }
 
+/* .grid-item education:hover{
+    color: rgb(157, 190, 224);
+    transform: scale(1.1);
+
+
+} */
+
+
 .form{
     background-color: rgb(55, 70, 88);
     color: rgb(255, 255, 255);
 }
 
+#icon li{
+    display:inline-block;
+    list-style: none;
+    text-align: center;
+}
+
+.icon li{
+    text-align: center;
+}
+
+footer h2{
+    text-align: center;
+}
+
 /* -----------------------------------------------------------Media Queries---------------------------------------------------------------------- */
 /* SMALL DEVICES */
-/* * SMALL DEVICES */
 @media screen and (max-width: 600px){
     .heading{
         font-size: small;
     }
+
     article{
         font-size: small;
+        font-family:Arial, Helvetica, sans-serif
     }
+
+    #about me, #skills, #education{
+        font-size: medium;
+    }
+
+    footer{
+        font-size: small;
+        display: flex;
+    }
+
+    .form{
+        font-size: smaller;
+        text-align: center;
+    }
+
 }
+
+/* TABLET */
+@media screen and (min-width: 601px){
+.heading{
+    font-size: medium;
+}
+
+.article{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about me, #skills, #education{
+    font-size: large;
+}
+
+.form{
+    text-align: center;
+    font-size: medium;
+}
+
+footer{
+    font-size: medium;
+}
+}
+
+/* Desktop device */
+ @media screen and (min-width:993px){
+    
+ }
